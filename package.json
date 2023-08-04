@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "zenn-cli": "0.1.144"
+  },
+  "packageManager": "pnpm@8.6.11",
+  "private": true
+}
