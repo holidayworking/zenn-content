@@ -1,3 +1,29 @@
 {
-  "cSpell.words": ["preinstall", "proofdict", "textlint", "zenn"]
+  "cSpell.words": [
+    "Beelink",
+    "diskutil",
+    "DMAF5",
+    "dotfiles",
+    "fcitx",
+    "flatpak",
+    "fontconfig",
+    "geoip",
+    "gsettings",
+    "HanaMinA",
+    "holidayworking",
+    "Inconsolatazi",
+    "IPAPGothic",
+    "IPAPMincho",
+    "Koruri",
+    "MINISFORUM",
+    "mozc",
+    "noto",
+    "pacman",
+    "preinstall",
+    "proofdict",
+    "Roboto",
+    "textlint",
+    "touchpad",
+    "zenn"
+  ]
 }
