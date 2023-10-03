@@ -30,8 +30,8 @@ devDependencies:
     specifier: 8.0.0
     version: 8.0.0(textlint@13.3.3)
   zenn-cli:
-    specifier: 0.1.146
-    version: 0.1.146
+    specifier: 0.1.147
+    version: 0.1.147
 
 packages:
 
@@ -3199,8 +3199,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /zenn-cli@0.1.146:
-    resolution: {integrity: sha512-IjxTGvaatNpaTl/3spegOqSIOZOZG+QAllbQjlsgS3yxKRWZZ4dl2XRpTpaI5Qg9E4NCuX5EZ9+SM+9cxdzSgQ==}
+  /zenn-cli@0.1.147:
+    resolution: {integrity: sha512-4HKDyk357aIFZnii+Zkkq82Q0Q4uRD4+7zS/u8edwxPea/eeS6W4NBorPyloUzaFI/Rxe0DLr4/aRFc0hHG0ug==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dev: true
