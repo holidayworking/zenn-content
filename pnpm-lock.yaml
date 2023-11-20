@@ -12,8 +12,8 @@ devDependencies:
     specifier: 0.32.1
     version: 0.32.1
   markdownlint-cli2:
-    specifier: 0.10.0
-    version: 0.10.0
+    specifier: 0.11.0
+    version: 0.11.0
   npm-run-all:
     specifier: 4.1.5
     version: 4.1.5
@@ -157,6 +157,11 @@ packages:
 
   /@proofdict/types@3.1.0:
     resolution: {integrity: sha512-f8cxZ35ylr4n8TW/eUJ9KynEc484Tiocgl4a/ZZNS1dAH5G4vkJ+1AFw2ob/4dCiafy5tcue6TiZuWBFAmsS5g==}
+    dev: true
+
+  /@sindresorhus/merge-streams@1.0.0:
+    resolution: {integrity: sha512-rUV5WyJrJLoloD4NDN1V1+LDMDWOa4OTsT4yYJwQNpTU6FWxkxHpL7eu4w+DmiH8x/EAM1otkPE1+LaspIbplw==}
+    engines: {node: '>=18'}
     dev: true
 
   /@textlint-rule/textlint-rule-no-invalid-control-character@2.0.0:
@@ -1029,6 +1034,17 @@ packages:
       micromatch: 4.0.5
     dev: true
 
+  /fast-glob@3.3.2:
+    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.5
+    dev: true
+
   /fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
@@ -1181,15 +1197,16 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /globby@13.2.2:
-    resolution: {integrity: sha512-Y1zNGV+pzQdh7H39l9zgB4PJqjRNqydvdYCDG4HFXM4XuvSaQQlEc91IU1yALL8gUTDomgBAfz3XJdmUS+oo0w==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  /globby@14.0.0:
+    resolution: {integrity: sha512-/1WM/LNHRAOH9lZta77uGbq0dAEQM+XjNesWwhlERDVenqothRbnzTrL3/LrIoEPPjeUHC3vrS6TwoyxeHs7MQ==}
+    engines: {node: '>=18'}
     dependencies:
-      dir-glob: 3.0.1
-      fast-glob: 3.3.1
+      '@sindresorhus/merge-streams': 1.0.0
+      fast-glob: 3.3.2
       ignore: 5.2.4
-      merge2: 1.4.1
-      slash: 4.0.0
+      path-type: 5.0.0
+      slash: 5.1.0
+      unicorn-magic: 0.1.0
     dev: true
 
   /gopd@1.0.1:
@@ -1668,17 +1685,6 @@ packages:
     resolution: {integrity: sha512-CbgcN622YzXC+k9oUroBSPFVX4in/w66mab/zpvSfFeUezSGD8C13c2RetyM1eo1jkp3sKrzvmf2HFEp5QOdZA==}
     dev: true
 
-  /markdown-it@13.0.1:
-    resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
-    hasBin: true
-    dependencies:
-      argparse: 2.0.1
-      entities: 3.0.1
-      linkify-it: 4.0.1
-      mdurl: 1.0.1
-      uc.micro: 1.0.6
-    dev: true
-
   /markdown-it@13.0.2:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
@@ -1696,38 +1702,30 @@ packages:
       repeat-string: 1.6.1
     dev: true
 
-  /markdownlint-cli2-formatter-default@0.0.4(markdownlint-cli2@0.10.0):
+  /markdownlint-cli2-formatter-default@0.0.4(markdownlint-cli2@0.11.0):
     resolution: {integrity: sha512-xm2rM0E+sWgjpPn1EesPXx5hIyrN2ddUnUwnbCsD/ONxYtw3PX6LydvdH6dciWAoFDpwzbHM1TO7uHfcMd6IYg==}
     peerDependencies:
       markdownlint-cli2: '>=0.0.4'
     dependencies:
-      markdownlint-cli2: 0.10.0
+      markdownlint-cli2: 0.11.0
     dev: true
 
-  /markdownlint-cli2@0.10.0:
-    resolution: {integrity: sha512-kVxjPyKFC+eW7iqcxiNI50RDzwugpXkEX5eQlDso/0IUs9M73jXYguLFHDzgi5KatcxU/57Fu8KoGtkFft9lfA==}
-    engines: {node: '>=16'}
+  /markdownlint-cli2@0.11.0:
+    resolution: {integrity: sha512-RmFpr+My5in8KT+H/A6ozKIVYVzZtL5t9c8DYdv0YJdljl385z44CcCVBrclpHxCGMY2tr0hZ/ca+meGGvgdnQ==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      globby: 13.2.2
-      markdownlint: 0.31.1
-      markdownlint-cli2-formatter-default: 0.0.4(markdownlint-cli2@0.10.0)
+      globby: 14.0.0
+      markdownlint: 0.32.1
+      markdownlint-cli2-formatter-default: 0.0.4(markdownlint-cli2@0.11.0)
       micromatch: 4.0.5
       strip-json-comments: 5.0.1
-      yaml: 2.3.2
+      yaml: 2.3.4
     dev: true
 
   /markdownlint-micromark@0.1.7:
     resolution: {integrity: sha512-BbRPTC72fl5vlSKv37v/xIENSRDYL/7X/XoFzZ740FGEbs9vZerLrIkFRY0rv7slQKxDczToYuMmqQFN61fi4Q==}
     engines: {node: '>=16'}
-    dev: true
-
-  /markdownlint@0.31.1:
-    resolution: {integrity: sha512-CKMR2hgcIBrYlIUccDCOvi966PZ0kJExDrUi1R+oF9PvqQmCrTqjOsgIvf2403OmJ+CWomuzDoylr6KbuMyvHA==}
-    engines: {node: '>=16'}
-    dependencies:
-      markdown-it: 13.0.1
-      markdownlint-micromark: 0.1.7
     dev: true
 
   /markdownlint@0.32.1:
@@ -2182,6 +2180,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /path-type@5.0.0:
+    resolution: {integrity: sha512-5HviZNaZcfqP95rwpv+1HDgUamezbqdSYTyzjTvwtJSnIH+3vnbmWsItli8OFEndS984VT55M3jduxZbX351gg==}
+    engines: {node: '>=12'}
+    dev: true
+
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
@@ -2477,9 +2480,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /slash@4.0.0:
-    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
-    engines: {node: '>=12'}
+  /slash@5.1.0:
+    resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /slice-ansi@4.0.0:
@@ -3112,6 +3115,11 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /unicorn-magic@0.1.0:
+    resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
+    engines: {node: '>=18'}
+    dev: true
+
   /unified@8.4.2:
     resolution: {integrity: sha512-JCrmN13jI4+h9UAyKEoGcDZV+i1E7BLFuG7OsaDvTXI5P0qhHX+vZO/kOhz9jn8HGENDKbwSeB0nVOg4gVStGA==}
     dependencies:
@@ -3310,8 +3318,8 @@ packages:
     engines: {node: '>=0.4'}
     dev: true
 
-  /yaml@2.3.2:
-    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
+  /yaml@2.3.4:
+    resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
     dev: true
 
