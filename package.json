@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@proofdict/textlint-rule-proofdict": "3.1.2",
-    "markdownlint": "0.32.1",
+    "markdownlint": "0.33.0",
     "markdownlint-cli2": "0.11.0",
     "npm-run-all2": "5.0.0",
     "textlint": "13.4.1",
