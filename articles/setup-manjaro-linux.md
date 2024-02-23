@@ -80,13 +80,13 @@ cd dotfiles
 ./install.sh
 ```
 
-端末アプリケーションで、カスタムコマンドを `/usr/bin/fish` に変更してから、端末アプリケーションを再起動後に下記のコマンドを実行した。
+端末アプリケーションで、カスタムコマンドを `/usr/bin/fish` に変更してから、端末アプリケーションを再起動後に次のコマンドを実行した。
 
 ```shell
 curl -fsSL https://git.io/fisher | source && fisher update
 ```
 
-## トラックパッドの設定
+# トラックパッドの設定
 
 2 本指でクリックしたら、右クリックするようにした。
 
@@ -182,7 +182,7 @@ gsettings set org.gnome.mutter overlay-key ""
 yay -S xremap-x11-bin
 ```
 
-一般ユーザーで起動するために、下記のコマンドを実行した。
+一般ユーザーで起動するために、次のコマンドを実行した。
 
 ```shell
 sudo gpastswd -a $USER input
@@ -190,7 +190,7 @@ echo uinput | sudo tee /etc/modules-load.d/uinput.conf
 echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules
 ```
 
-下記の内容で `~/.config/xremap/config.yaml` を作成した。
+次の内容で `~/.config/xremap/config.yaml` を作成した。
 
 ```yaml
 modmap:
@@ -230,7 +230,7 @@ keymap:
 
 そして、`xremap ~/.config/xremap/config.yaml` を実行後 、期待通りにキーがスワップしていることを確認した。
 
-systemd で管理するために下記の内容で `~/.config/systemd/user/xremap.service` を作成した。
+systemd で管理するために次の内容で `~/.config/systemd/user/xremap.service` を作成した。
 
 ```plaintext
 [Unit]
@@ -356,7 +356,7 @@ yay -S fcitx5-mozc-ut
 
 システムを再起動後に Fcitx 5 設定アプリケーションで Mozc を追加した。
 
-## Dock にゴミ箱を表示
+# Dock にゴミ箱を表示
 
 ```shell
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash true
@@ -388,7 +388,7 @@ yay -S hyper-bin
 yay -S visual-studio-code-bin
 ```
 
-キーボードショートカットは下記のように変更した。
+キーボードショートカットは次のように変更した。
 
 ```json
 [
