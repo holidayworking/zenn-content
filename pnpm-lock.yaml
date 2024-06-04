@@ -33,8 +33,8 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(textlint@14.0.4)
       zenn-cli:
-        specifier: 0.1.153
-        version: 0.1.153
+        specifier: 0.1.154
+        version: 0.1.154
 
 packages:
 
@@ -544,6 +544,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globby@10.0.2:
     resolution: {integrity: sha512-7dUi7RvCoT/xast/o/dLN53oqND4yk0nsHkhRgn9w65C4PofCLOoJ39iSOg+qVDdWQPIEj+eszMHQ+aLVwwQSg==}
@@ -601,6 +602,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -1152,6 +1154,7 @@ packages:
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   run-parallel@1.2.0:
@@ -1483,8 +1486,8 @@ packages:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
 
-  zenn-cli@0.1.153:
-    resolution: {integrity: sha512-MLIdtRW2arQBuVCKlWrMF4eFZGkvmswrcc0OvgxmQs9w9/9rODfoyFK9nQQwrgyUwlxDzhUa/oAO6nks4GY5DA==}
+  zenn-cli@0.1.154:
+    resolution: {integrity: sha512-s9SZst7TWiA2VS+40CWUS7pu5cl2OAIhNPyiAtqIwjDFzqB47vVsN78G8VK7VZ7ov6B4gqQrQHcgMHVqvoLN8g==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3323,7 +3326,7 @@ snapshots:
 
   xtend@4.0.2: {}
 
-  zenn-cli@0.1.153: {}
+  zenn-cli@0.1.154: {}
 
   zlibjs@0.3.1: {}
 
