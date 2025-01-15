@@ -12,8 +12,8 @@ importers:
         specifier: 3.1.2
         version: 3.1.2
       markdownlint:
-        specifier: 0.37.3
-        version: 0.37.3
+        specifier: 0.37.4
+        version: 0.37.4
       markdownlint-cli2:
         specifier: 0.17.1
         version: 0.17.1
@@ -949,6 +949,10 @@ packages:
 
   markdownlint@0.37.3:
     resolution: {integrity: sha512-eoQqH0291YCCjd+Pe1PUQ9AmWthlVmS0XWgcionkZ8q34ceZyRI+pYvsWksXJJL8OBkWCPwp1h/pnXxrPFC4oA==}
+    engines: {node: '>=18'}
+
+  markdownlint@0.37.4:
+    resolution: {integrity: sha512-u00joA/syf3VhWh6/ybVFkib5Zpj2e5KB/cfCei8fkSRuums6nyisTWGqjTWIOFoFwuXoTBQQiqlB4qFKp8ncQ==}
     engines: {node: '>=18'}
 
   match-index@1.0.3:
@@ -2064,7 +2068,7 @@ snapshots:
   '@textlint/source-code-fixer@3.4.5':
     dependencies:
       '@textlint/types': 1.5.5
-      debug: 4.3.4
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -2810,6 +2814,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  markdownlint@0.37.4:
+    dependencies:
+      markdown-it: 14.1.0
+      micromark: 4.0.1
+      micromark-core-commonmark: 2.0.2
+      micromark-extension-directive: 3.0.2
+      micromark-extension-gfm-autolink-literal: 2.1.0
+      micromark-extension-gfm-footnote: 2.1.0
+      micromark-extension-gfm-table: 2.1.0
+      micromark-extension-math: 3.1.0
+      micromark-util-types: 2.0.1
+    transitivePeerDependencies:
+      - supports-color
+
   match-index@1.0.3:
     dependencies:
       regexp.prototype.flags: 1.5.0
@@ -3104,7 +3122,7 @@ snapshots:
   micromark@4.0.1:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.3.4
+      debug: 4.4.0
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.2
