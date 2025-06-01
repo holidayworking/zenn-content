@@ -13,6 +13,7 @@
     },
     "@proofdict/proofdict": {
       "dictURL": "https://azu.github.io/proof-dictionary/"
-    }
+    },
+    "@textlint-ja/no-synonyms": true
   }
 }
