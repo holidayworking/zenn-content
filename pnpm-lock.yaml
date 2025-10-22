@@ -39,8 +39,8 @@ importers:
         specifier: 12.0.2
         version: 12.0.2
       zenn-cli:
-        specifier: 0.2.4
-        version: 0.2.4
+        specifier: 0.2.6
+        version: 0.2.6
 
 packages:
 
@@ -2126,8 +2126,8 @@ packages:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
 
-  zenn-cli@0.2.4:
-    resolution: {integrity: sha512-TnKSyYw5Ykh/Y9nRElfJ+Eo0hKFjcPNAuX7ymJLwD6ZuFTKzYeJFnXjxJjTWEnZOcXwhfZf4nt/UGvS7wz6Y4A==}
+  zenn-cli@0.2.6:
+    resolution: {integrity: sha512-rDRd13/PuJBjpj5nskuf0tOgPb9SBMHF6r4Fu0zdYQsK0iLPtoP240RhZdAIh5d70jPgjf4EtSTRgoJ8n9Tvjg==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -4981,7 +4981,7 @@ snapshots:
 
   xtend@4.0.2: {}
 
-  zenn-cli@0.2.4: {}
+  zenn-cli@0.2.6: {}
 
   zlibjs@0.3.1: {}
 
